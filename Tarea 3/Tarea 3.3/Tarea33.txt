@@ -1,0 +1,23 @@
+//Casa del Futuro
+//Municipalidad de Godoy Cruz
+//Provincia de Mendoza
+//Contreras, Simón Jesús
+//Comisión 1 - Octubre
+//Tarea 3.3
+
+Proceso AlquilerAutomovil
+    Definir Recorrido, Importe Como Entero;
+    Escribir "Bienvenido al Sistema de Cobro por Alquiler de Vehículo";
+    Escribir "Ingrese el valor del recorrido realizado [Km]";
+    Leer Recorrido;
+    Si Recorrido>1000 Entonces
+        Importe=800000+Recorrido*10000;
+    SiNo
+        Si Recorrido >300 Entonces
+            Importe=Recorrido*15000-4200000;
+        SiNo
+            Importe=300000;
+        FinSi
+    Fin Si
+    Escribir "El Importe total por el recorrido realizado es de ", Importe;
+FinProceso
